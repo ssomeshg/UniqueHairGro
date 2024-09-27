@@ -7389,3 +7389,16 @@ button {
 /*================================
     COMMING SOON PAGE END
 ================================*/
+
+.veno-vdo{
+    background: var(--colorPrimary);
+    color: #fff;
+    /* padding: 20px; */
+    width: 50px;
+    border-radius: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
