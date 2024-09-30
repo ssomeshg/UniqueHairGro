@@ -396,7 +396,7 @@ button {
 }
 
 .breadcrumb_overlay {
-    background: linear-gradient(180deg, rgba(250, 163, 146, 0.6) 0%, rgba(0, 38, 51, 0.6) 57.04%);
+    background: linear-gradient(180deg, rgb(250 146 220 / 60%) 0%, rgba(0, 38, 51, 0.6) 57.04%);
     padding: 125px 0px 130px 0px;
 }
 
@@ -4845,7 +4845,6 @@ button {
     flex-wrap: wrap;
 }
 
-.award_text ul li,
 .award_text ol li {
     width: 50%;
 }
@@ -5712,11 +5711,11 @@ button {
 }
 
 .accordion-button {
-    background: #fceae8;
+    background: #ff80b72b;
     border-radius: 5px;
     border: none;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 700;
     text-transform: capitalize;
     color: var(--colorBlack);
     padding: 15px 50px 15px 15px;
@@ -5740,7 +5739,7 @@ button {
 }
 
 .accordion-button::after {
-    background: url(../images/faq_plus.jpg);
+    background: url(../images/plus-sign.png);
     width: 30px;
     height: 30px;
     background-position: center;
