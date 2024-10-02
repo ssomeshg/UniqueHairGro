@@ -392,7 +392,7 @@ button {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    margin-top: 140px;
+    margin-top: 110px;
 }
 
 .breadcrumb_overlay {
@@ -1152,10 +1152,10 @@ button {
     display: block;
     width: 90px;
     height: 102px;
-    background: url(../images/featured_servoce_shape.png);
+    background: url(../images/badge.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     text-align: center;
     line-height: 100px;
     font-size: 40px;
