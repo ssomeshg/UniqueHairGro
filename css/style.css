@@ -7172,6 +7172,10 @@ button {
     margin-top: 20px;
 }
 
+.process-feature ul li::after{
+    display: none;
+}
+
 .terms_condition_text ul li::after,
 .terms_condition_text ol li::after {
     position: absolute;
@@ -7400,4 +7404,134 @@ button {
     justify-content: center;
     align-items: center;
 
+}
+
+.process-feature ul li{
+    width: 300px;
+    height: auto;
+}
+.nav-links{
+    position: relative;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background ease 0.2s;
+    max-width: 250px;
+    width: 19%;
+    border-radius: 10px;
+    background-color: #ff80b72b;
+    border: 1px solid var(--colorPrimary);
+}
+.nav-links.active{
+    background-color: #C61A64;
+}
+.nav-links.active > p{
+    color: #fff !important;
+
+}
+.nav-links img{
+    width: 100px;
+}
+.process_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.process_main .tab-pane.fade.show.active{
+    display: block !important;
+    opacity: 1;
+    transform: scale(1) translateX(0) translateY(0);
+    
+}
+.process_main .tab-pane{
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    margin-top: 55px;  
+    background: var(--colorPrimary);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    opacity: 0;
+    /* transition: transform ease 0.2s 0.2s, opacity ease 0.4s 0.4s;
+    transform: scale(0) translateX(-50%) translateY(-6px);
+    border-radius: 10px 10px 10px 10px;
+    animation: fadeInFromCenter 0.8s 0.4s ease forwards;    */
+}
+.process_main #tab-01 svg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -30px;
+    left: 8%;
+}
+.process_main #tab-02 svg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -30px;
+    left: 28%;
+
+}
+.process_main #tab-03 svg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -30px;
+    left: 48%;
+
+}
+.process_main #tab-04 svg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -30px;
+    left: 68%;
+
+}
+.process_main #tab-05 svg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -30px;
+    left: 88%;
+
+}
+.nav-link.active > .nav-item .process-link{
+    background-color: #666a6c;
+}
+
+@media(min-width:1024px){
+    .nav-links{
+        width: 18%;
+    }
+}
+@media (min-width:325px) and (max-width:768px) {
+    .process_main{
+        display: grid;
+        width: 100%;
+    }
+    .nav-links{
+        width: 100% !important;
+        max-width: 100%;
+    }
+    .process_main .tab-pane {
+        order: 1;
+    }
+    .tab-pane svg{
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+    
 }
