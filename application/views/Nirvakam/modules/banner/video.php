@@ -73,8 +73,10 @@
     let table = new DataTable('#myTable');
 </script>
 <script>
-    $(document).ready(function() {
-        $('.edit-video').on('click', function(e) {
+    $(document).ready(function () {
+        let table = new DataTable('#myTable');
+
+        $('#myTable').on('click', '.edit-video', function (e) {
             e.preventDefault();
             var videoId = $(this).data('id');
             editvideo(videoId);
@@ -85,17 +87,16 @@
                 url: '<?php echo base_url('Banner/video_edit'); ?>',
                 type: 'POST',
                 dataType: 'json',
-                data: {
-                    id: id
-                },
-                success: function(response) {
+                data: { id: id },
+                success: function (response) {
                     $('#id').val(response.id);
                     $('#video_id').val(response.video_id);
                 },
-                error: function(xhr, status, error) {
+                error: function (xhr, status, error) {
                     console.error('AJAX Error: ' + status + ' - ' + error);
                 }
             });
         }
     });
 </script>
+

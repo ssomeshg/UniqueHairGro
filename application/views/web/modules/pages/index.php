@@ -172,7 +172,7 @@
                 class="venobox"
                 data-autoplay="true"
                 data-vbtype="video"
-                href="https://youtu.be/wy74iRBqOzQ?si=AY12yBaL5dQ9fv2T"
+                href="https://www.youtube.com/watch?v=Ww55n-QURsU"
               >
                 <i class="fas fa-play"></i>
               </a>
@@ -445,7 +445,7 @@
           </div>
           <?php endforeach; ?>
         </div>
-        <a class="common_btn" href="#">Show All</a>
+        <a class="common_btn" href="<?= base_url() . 'before_after' ?>">Show All</a>
 
 
         <!--=== before and after  ====-->
